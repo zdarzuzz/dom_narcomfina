@@ -200,7 +200,7 @@ blockquote::before {
   overflow-x: hidden;
 }
 
-#about::after {
+/* #about::after {
   content: "";
   background-image: url("../images/1440.png");
   width: 1440px;
@@ -211,7 +211,7 @@ blockquote::before {
   top: 0;
   left: calc(50%-720px);
   opacity: 0.2;
-}
+} */
 
 #about section {
   width: 1440px;
@@ -275,4 +275,42 @@ blockquote::before {
 }
 #about #thirdSection div:nth-of-type(1) {
   padding: 0px 0px 0 120px;
+}
+
+#about #fourSection {
+  flex-direction: column;
+  width: 700px;
+  align-items: center;
+  padding: 310px 0;
+}
+#fourSection h2,
+#fourSection p {
+  text-align: center;
+}
+#about #fourSection div {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#fourSection a {
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+#fourSection a:hover {
+  border: 1px solid black;
+  color: black;
+  transition: all ease 0.6s;
+}
+#fourSection a.black {
+  color: #eee;
+  background-color: #343434;
+  border: 1px solid #343434;
+}
+#fourSection a.black:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
 }
